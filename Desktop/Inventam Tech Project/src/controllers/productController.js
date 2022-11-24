@@ -20,14 +20,15 @@ const isvalidObjectId = function (ObjectId) {
 const createProduct = async function (req, res) {
     try {
         let body = req.body
-        let categoryName = body.categoryName
-        let { gender,price,size,colour } = body.subcategory
+        let categoryName = body
+        let { gender,price,size,colour } = body.subcategory        
+       
 
         if (!isValidBody(body))  return res.status(400).send({ status: false, message: "Body cannot be empty" })
-        if (!isValid(categoryName)) return res.status(400).send({ status: false, message: "Name is required" })
+        if (!isValid(categoryName)) return res.status(400).send({ status: false, message: "categoryName is required" })
         if (!isValid(gender)) return res.status(400).send({ status: false, message: "Gender is required" })
         if (!isValid(price)) return res.status(400).send({ status: false, message: "Colour is required" })
-        if (!isValid(size)) return res.status(400).send({ status: false, message: "AvailableSizes is required" })
+        if (!isValid(size)) return res.status(400).send({ status: false, message: "size is required" })
         if (!isValid(colour)) return res.status(400).send({ status: false, message: "Price is required" })
 
        
