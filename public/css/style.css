@@ -1,0 +1,120 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+  }
+
+/*----------------------------- Login  and signup page CSS----------------------------------------------------  */
+.register-login{
+    background-color:azure;
+    height: 700px;
+    width:auto;
+}
+
+.form-group{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+}
+/* Icon CSS */
+/* .input-icons i{
+ margin-left:750px;
+    margin-bottom: 200px;
+} */
+.header-h1{
+    text-align: center;
+    padding-top: 50px;
+    /* position: relative; */
+    /* height: 100%; */
+    /* margin-top: 100px; */
+}
+.align{
+    height: auto;
+    /* width: 70%; */
+    margin-top: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    box-shadow: 25px 25px 25px lightblue;
+    
+    /* padding: 50px; */
+}
+
+/* --------------------------------- Home Page CSS -------------------------------------------- */
+
+/*------------------------------------- Navbar --------------------------------*/
+
+nav{
+    font-family: 'Teko', sans-serif;
+}
+
+.nav-style{
+    padding: 2% 3%;
+}
+
+.logo{
+    height:90px;
+    width: 120px;
+}
+
+.navbar-style{
+    background-color:#fff;
+    color:#000;
+    border-radius: 30px;
+}
+
+.navbar-brand{
+    margin:0 10px;
+    /* margin-top: 8px; */
+    letter-spacing: 3px;
+    font-size: 30px;
+    border: inset orange;
+    padding: 5px 10px 0;
+    border-radius: 10px;
+    font-family: 'Teko', sans-serif;
+} 
+
+.nav-item{
+    margin:0 0 0 35px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.searchbar{
+    height: 40px;
+    width: 200px;
+    /* border: ridge black; */
+    /* border-style: ridge #D3D3D3;
+    border-radius: 10px; */
+
+}
+
+.logout-btn{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #fff;
+    border-color: #000;
+    margin: 0 30px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.logout-btn:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: white;
+}
+
+#title{
+    background-color: #000;
+}
+
+/*--------------------------------- Home page container----------------------------------- */
+
+.home-container{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding:100px 0 100px 0;
+}
+

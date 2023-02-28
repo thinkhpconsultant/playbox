@@ -1,0 +1,80 @@
+<%- include('partials/header'); -%>
+
+    <body>
+        <div class="register-login">
+
+            <div class="container-fluid">
+                <h1 class="header-h1">Signup</h1>
+                <div class="align">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="/registeruser" method="post">
+                                
+
+                                <div class="form-group">
+                                    <label for="username">Enter Your Name:</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter Your name"
+                                        required>
+                                </div>
+                                <div class="form-group drop">
+                                    <label for="username">Select your role:-</label>
+                                    <br>
+                                    <select class="form-group" name="role" id="select" required>
+                                        <option value="" hidden>Select Your Role:</option>
+                                        <option value="employee">Employee</option>
+                                        <option value="mentor">Mentor</option>
+                                        <option value="admin">Admin</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username">Enter Your Email:</label>
+                                    <input type="email" id="user" class="form-control" name="username"
+                                        placeholder="Enter Your Username" required>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="username">Enter Your Password:</label>
+                                    <input type="password" id="pass" class="form-control" name="password"
+                                        placeholder="Enter Your Password" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" onclick=verify() class="btn btn-primary btn-lg btn-block">Sign
+                                        Up</button>
+                                </div>
+                                <div class="form-group">
+                                    <p class="text-center text-muted mt-4 mb-4">Already have an account? <a
+                                            href="/loginuser" class=""><u>Login here</u></a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            //Validating in client side using javascript
+            function verify() {
+                const role = document.getElementById("select").value;
+                const username = document.getElementById("user").value;
+                const password = document.getElementById("pass").value;
+
+                if (role === null) {
+                    alert("Please Select Your Role");
+                }
+                if (username === null || username.length < 6) {
+                    alert("Enter Valid Email");
+                }
+                if (password === null || password.length < 6) {
+                    alert("Enter Valid Password");
+                }
+            }
+
+        </script>
+    </body>
+
+    <%- include('partials/footer'); -%>

@@ -1,0 +1,81 @@
+<%- include('partials/header'); -%>
+<section id="title">
+<div class="nav-style">
+<nav class="navbar navbar-expand-lg navbar-light navbar-style">
+    <img src="images/logo.jpg" class="nav-img logo" alt="ThinkHPLogo">
+    <a class="navbar-brand" href="#">THINKHP CONSULTANCY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+      <form class="form-inline my-6 my-lg-0">
+        <input class="form-control form-control-lg mr-sm-2 searchbar" type="search" placeholder="Search" aria-label="Search">
+        <a href="#"><button class="btn my-2 my-sm-0 logout-btn" type="submit">Logout</button></a>
+      </form>
+    </div>
+  </nav>
+ </div>
+
+ 
+
+     <div class="container-fluid home-container">
+         <div class="row">
+             <div class="col-lg-6 col-sm-12 welcome">
+                 <h1>Welcome User</h1>
+                 <h2>THinkHP </h2>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                      <form action="/home" method="post">
+                          <div class="form-group drop">
+                          <label for="username">Select your role:-</label>
+                          <br>
+                          <select class="form-group" name="role" id="">
+                              <option value="" hidden>Select Your Role</option>
+                              <option value="employee">Employee</option>
+                              <option value="mentor">Mentor</option>
+                              <option value="admin">Admin</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="username">Enter Email</label>
+                          <input type="email" class="form-control" name="username" placeholder="Enter Username"
+                          required>
+                      </div>
+                      <div class="form-group input-icons">
+                          <label for="username">Enter Password</label>
+                          <input type="password" class="form-control" id="pass" name="password" placeholder="Enter Password"
+                          required>
+                              <!-- <i class="far fa-eye"id="togglePassword"></i> -->
+                              
+                      </div>
+
+                      <div class="form-group">
+                          <button type="submit" onclick="fun1()" class="btn btn-primary btn-lg btn-block">Login</button>
+                      </div>
+                      <div class="form-group">
+                          <p class="text-center text-muted mt-4 mb-4">Forget Password? <a href="/register"
+                              class=""><u>Click here</u></a></p>
+                          </div>
+                          
+                          <div class="form-group">
+                          <p class="text-center text-muted mb-3">Don't have an account? <a href="/registerUser"
+                              class=""><u>Register here</u></a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+            </div>
+            
+        </div>
+</section>
+<%- include('partials/footer'); -%>
